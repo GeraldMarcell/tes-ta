@@ -1,0 +1,74 @@
+# Python bytecode and local runtime state
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.*
+**/credentials.*
+secrets.*
+**/secrets.*
+*_token.*
+*_api_key.*
+*_apikey.*
+
+# Local datasets, source archives, and generated split manifests
+/data/raw/
+/data/source_archives/
+/data/splits/
+
+# Model weights and training checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Experiment outputs, prediction dumps, and model caches
+/outputs/
+/runs/
+/wandb/
+/mlruns/
+/lightning_logs/
+/tensorboard/
+**/predictions/
+**/checkpoints/
+**/cache/
+**/.cache/
+*.tfevents.*
+*.log
+
+# Offline package wheels (includes the multi-GB PyTorch wheel)
+/wheels/
+
+# IDE and notebook-local state
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.ipynb_checkpoints/
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Generated report diagnostics and large artifacts
+/reports/*diagnostics/
+/reports/*diagnostics/**
+/reports/foodbd_pilot/visual_audit/
